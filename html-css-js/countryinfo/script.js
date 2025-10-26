@@ -20,7 +20,7 @@ document.querySelector(".mode").innerText = localStorage.themeText ?? "Dark Mode
 
 document.addEventListener("DOMContentLoaded", (e)=> {
     if(search.value != "") {
-        fetch('https://restcountries.com/v3.1/all')
+        fetch('https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital')
         .then((res) => {
             return res.json()
     })
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", (e)=> {
 })
 
 let allDataOfCountries;
-fetch('https://restcountries.com/v3.1/all')
+fetch('https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital')
     .then((res) => {
         return res.json()
     })
@@ -46,7 +46,7 @@ fetch('https://restcountries.com/v3.1/all')
 filterRegion.addEventListener("change", (e)=> {
     search.value = ""
     localStorage.inputValue = ""
-    fetch(`https://restcountries.com/v3.1/region/${filterRegion.value}`)
+    fetch(`https://restcountries.com/v3.1/region/${filterRegion.value}?fields=name,flags,region,population,capital`)
     .then((res) => {
         return res.json()
     })
