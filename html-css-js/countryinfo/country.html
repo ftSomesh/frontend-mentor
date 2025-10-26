@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country-Details</title>
+    <link rel="shortcut icon" href="/images/earth-americas-solid.svg" type="image/svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="country.js" defer></script>
+    <link rel="stylesheet" href="country.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <h2 id="where-in-the-world"><a href="index.html">Where in the world</a></h2>
+        <p class="theme-changer"><i id="icon" style="font-size: 1.4rem; vertical-align: middle; transform: rotate(-20deg);"
+                class="fa-regular fa-moon"></i>&nbsp;&nbsp; <span class="mode">Dark Mode</span></p>
+    </header>
+    <main class="particular-main">
+        <div class="container-for-structure">
+            <a onclick= "history.back()" class="back-btn skeleton" href="#"><i class="fa-solid fa-arrow-left"></i>&nbsp; Back</a>
+            <div class="country-details">
+                <div id="img-container-flag" class="skeleton">
+                    <img  draggable="false">
+                </div>
+                <div class="details-text-container">
+                    <h1 class="skeleton" id="country-name"></h1>
+                    <div class="details-text">
+                        <p class="skeleton"><b>Native Name: </b><span class="native-name"></span></p>
+                        <p class="skeleton"><b>Population: </b><span class="population"></span></p>
+                        <p class="skeleton"><b>Region: </b><span class="region"></span></p>
+                        <p class="skeleton"><b>Sub Region: </b><span class="sub-region"></span></p>
+                        <p class="skeleton"><b>Capital: </b><span class="capital"></span></p>
+                        <p class="skeleton"><b>Top Level Domain: </b><span class="top-level-domain"></span></p>
+                        <p class="skeleton"><b>Currencies: </b><span class="currencies"></span></p>
+                        <p class="skeleton"><b>Languages: </b><span class="languages"></span></p>
+                    </div>
+                    <div class="border-countries">
+                        <b class="bold skeleton">Border Countries: </b>
+                        <!-- <a href="">France</a>
+                    <a href="">France</a>
+                    <a href="">France</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

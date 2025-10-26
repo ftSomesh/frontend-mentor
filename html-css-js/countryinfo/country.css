@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+body {
+    -webkit-user-select: none;
+    user-select: none;
+    margin: 0;
+}
+:root {
+    --var-background-color: white;
+    --var-color: black;
+    --var-elements-color: white;
+}
+.particular-main {
+    padding-inline: 1.8rem;
+}
+
+.back-btn {
+    background-color: var(--var-elements-color);
+    border-radius: 0.4rem;
+    padding: 0.4rem 1.8rem;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.country-details {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 3rem;
+}
+#img-container-flag {
+    max-width: 420px;
+}
+
+.country-details img {
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.details-text {
+    max-height: 10rem;
+    row-gap: 0.8rem;
+    column-gap: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.details-text p {
+    margin: 0;
+}
+
+.border-countries {
+    margin-top: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.border-countries a {
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem 1rem;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+.border-countries > a {
+    background-color: var(--var-elements-color);
+}
+
+@media screen and (max-width: 1030px) {
+    
+    .details-text {
+        column-gap: 0.2rem;
+    }
+    #img-container-flag {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .country-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .details-text {
+        column-gap: 0;
+        row-gap: 0.2rem;
+        max-height: unset;
+    }
+
+    .country-details img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .back-btn {
+        padding-inline: 0.4rem;
+        padding-block: 0.4rem;
+        font-size: 0.8rem;
+    }
+    .border-countries a {
+        font-size: 0.8rem;
+        border-radius: 0.2rem;
+        padding: 0.2rem 1rem;
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+    }
+}

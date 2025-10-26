@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountryInfo</title>
+    <link rel="shortcut icon" href="./images/earth-americas-solid.svg" type="image/svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <h2 id="where-in-the-world"><a href="index.html">Where in the world</a></h2>
+        <p class="theme-changer"><i id="icon"
+                style="font-size: 1.4rem; vertical-align: middle; transform: rotate(-20deg);"
+                class="fa-regular fa-moon"></i>&nbsp;&nbsp; <span class="mode">Dark Mode</span></p>
+    </header>
+    <div class="author-info">
+        <h5 id="author-details-h5">
+            <a class="skeleton" href="https://www.instagram.com/ft.someshh"><i
+                    class="fa-brands fa-instagram"></i>&nbsp;Instagram</a>
+            <a class="skeleton" href="https://github.com/ftSomesh"><i class="fa-brands fa-github"></i>&nbsp;Github</a>
+            <a class="skeleton" href="https://www.x.com/programmerizz"><i
+                    class="fa-brands fa-twitter"></i>&nbsp;x-corp</a>
+        </h5>
+    </div>
+    <div class="search-filter-container">
+        <div class="search-container skeleton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="search-bar"><input class="search" placeholder="Search for a country.." type="text"></div>
+        </div>
+        <select title="region-select" name="select-regions" id="regions">
+            <option value="Filter by region" selected hidden>Filter by region</option>
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+    </div>
+    <main>
+        <div class="countries-container">
+            <!-- <a href="/" class="country-card">
+                <div class="skeleton"><img src="${country.flags.svg}"
+                        alt="${country.flags.alt ?? country.name.common + " -Flag"}"></div>
+                <div class="card-details">
+                    <h3 class="country-name skeleton">${country.name.common}</h3>
+                    <p class="skeleton"><b>Population: </b>${country.population.toLocaleString("en-IN")}</p>
+                    <p class="skeleton"><b>Region: </b>${country.region}</p>
+                    <p class="skeleton"><b>Capital: </b>${country.capital}</p>
+                </div>
+            </a> -->
+        </div>
+    </main>
+</body>
+
+</html>
