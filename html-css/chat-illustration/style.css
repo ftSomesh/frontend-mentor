@@ -11,7 +11,7 @@ html {
     --linear-right: hsl(270, 20%, 96%);
     --app-container: hsl(0, 0%, 100%);
     --placeholder-color: hsl(200, 3%, 58%);
-    --linear-background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    --linear-background: linear-gradient(225deg, #8739ff 0, #d344ff 100%);
     --base-color: white;
     --right-message-color: hsl(270, 7%, 64%);
     --left-message-color: hsl(276, 55%, 52%);
@@ -86,7 +86,8 @@ main {
 .container .mobile-container {
     border-radius: 30px;
     height: 530px;
-    width: 250px;
+    max-width: 283px;
+    width: 100%;
     background-color: var(--app-container);
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -317,7 +318,30 @@ main {
     }
 }
 
+input[type='radio'] {
+    all: unset;
+    cursor: pointer;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border: 0.0625rem solid #e472ff
+}
 
+input[type='radio']:checked {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 0.55rem;
+    height: 0.55rem;
+    background-color: #e987ff;
+    box-sizing: border-box;
+    border: 0.1563rem solid #680d7c;
+    border-radius: 50%;
+    padding: 0.0625rem
+}
 
 @media (max-width: 830px) {
     .linear-box-right {
